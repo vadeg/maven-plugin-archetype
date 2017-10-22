@@ -2,19 +2,24 @@
 
 Maven archetype allows you to generate maven project for building maven plugins.
 
+## Install archetype plugin
+
+`mvn install`
+
 ## Getting Started
 
-* Execute command `mvn install` to install plugin locally.
-* Execute command 
+You can create project executing command 
 ```
 mvn archetype:generate -DarchetypeGroupId=com.github.vadeg -DarchetypeArtifactId=maven-plugin-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
 ```
-* Specify `groupId`, `artifactId` and `version`.
+
+By default created project will use maven `3.5.0`. If you want to use another maven version add `-DmavenVersion=<your version>`
+property to command above.
 
 ### Prerequisites
 
 * Java 8
-* Maven 3.x
+* Maven 3.2 or later
 
 ## Contributing
 
